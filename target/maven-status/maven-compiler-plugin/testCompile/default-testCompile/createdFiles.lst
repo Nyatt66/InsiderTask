@@ -1,0 +1,8 @@
+com\insider\pages\CareersPage.class
+com\insider\utilities\ConfigurationReader.class
+com\insider\tests\ScreenShotOnFailure.class
+com\insider\utilities\BrowserUtils.class
+com\insider\utilities\BrowserUtils$1.class
+com\insider\pages\MainMenuPage.class
+com\insider\utilities\Driver.class
+com\insider\tests\InsiderTest.class
