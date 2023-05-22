@@ -1,0 +1,3 @@
+Screen shots will be displayed here.
+Each error creates new screenshot.
+This text is added because I should push the codes on github.
