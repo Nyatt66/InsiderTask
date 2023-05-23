@@ -81,10 +81,10 @@ function toggleDisplay(elementId) {
 <tr class="b">
 <td align="left">5</td>
 <td>0</td>
+<td>1</td>
 <td>0</td>
-<td>0</td>
-<td>100.0%</td>
-<td>22.437 s</td></tr></table><br />
+<td>80.0%</td>
+<td>21.725 s</td></tr></table><br />
 <p>Note: failures are anticipated and checked for with assertions while errors are unanticipated.</p><br /></section><section><a id="Package_List"></a>
 <h2><a name="Package_List"></a>Package List</h2>
 <p>[<a href="#Summary">Summary</a>] [<a href="#Package_List">Package List</a>] [<a href="#Test_Cases">Test Cases</a>]</p><br />
@@ -101,10 +101,10 @@ function toggleDisplay(elementId) {
 <td align="left"><a href="#com.insider.tests">com.insider.tests</a></td>
 <td>5</td>
 <td>0</td>
+<td>1</td>
 <td>0</td>
-<td>0</td>
-<td>100.0%</td>
-<td>22.437 s</td></tr></table><br />
+<td>80.0%</td>
+<td>21.725 s</td></tr></table><br />
 <p>Note: package statistics are not computed recursively, they only sum up all of its testsuites numbers.</p><section><a id="com.insider.tests"></a>
 <h3><a name="com.insider.tests"></a>com.insider.tests</h3>
 <table border="0" class="bodyTable">
@@ -118,30 +118,103 @@ function toggleDisplay(elementId) {
 <th>Success Rate</th>
 <th>Time</th></tr>
 <tr class="b">
-<td align="left"><a href="#com.insider.tests.InsiderTest"><img src="images/icon_success_sml.gif" alt="" /></a></td>
+<td align="left"><a href="#com.insider.tests.InsiderTest"><img src="images/icon_warning_sml.gif" alt="" /></a></td>
 <td><a href="#com.insider.tests.InsiderTest">InsiderTest</a></td>
 <td>5</td>
 <td>0</td>
+<td>1</td>
 <td>0</td>
-<td>0</td>
-<td>100.0%</td>
-<td>22.437 s</td></tr></table></section><br /></section><section><a id="Test_Cases"></a>
+<td>80.0%</td>
+<td>21.725 s</td></tr></table></section><br /></section><section><a id="Test_Cases"></a>
 <h2><a name="Test_Cases"></a>Test Cases</h2>
 <p>[<a href="#Summary">Summary</a>] [<a href="#Package_List">Package List</a>] [<a href="#Test_Cases">Test Cases</a>]</p><section><a id="com.insider.tests.InsiderTest"></a>
 <h3><a name="InsiderTest"></a>InsiderTest</h3>
 <table border="0" class="bodyTable">
 <tr class="a">
-<td align="left"><img src="images/icon_success_sml.gif" alt="" /></td>
-<td><a id="TC_com.insider.tests.InsiderTest.get_mainPage_title"></a>get_mainPage_title</td>
-<td>0.027 s</td></tr>
+<td align="left"><a href="#com.insider.tests.InsiderTest.get_mainPage_title"><img src="images/icon_error_sml.gif" alt="" /></a></td>
+<td><a id="TC_com.insider.tests.InsiderTest.get_mainPage_title"></a><a href="#com.insider.tests.InsiderTest.get_mainPage_title">get_mainPage_title</a>
+<div class="detailToggle" style="display:inline"><a href="javascript:toggleDisplay('com.insider.tests.InsiderTest.get_mainPage_title');"><span style="display:inline;" id="com.insider.tests.InsiderTest.get_mainPage_title-off"> + </span><span style="display:none;" id="com.insider.tests.InsiderTest.get_mainPage_title-on"> - </span>[ Detail ]</a></div></td>
+<td>0.307 s</td></tr>
+<tr class="b">
+<td align="left">-</td>
+<td>expected: &lt;#1 Leader in Individualized, Cross-Channel CX &#x2014; Insider&gt; but was: &lt;# Leader in Individualized, Cross-Channel CX &#x2014; Insider&gt;</td>
+<td>-</td></tr>
+<tr class="a" id="com.insider.tests.InsiderTest.get_mainPage_title-failure" style="display:none;">
+<td align="left">-</td>
+<td>
+<div class="source">
+<pre>org.opentest4j.AssertionFailedError: expected: &lt;#1 Leader in Individualized, Cross-Channel CX &#x2014; Insider&gt; but was: &lt;# Leader in Individualized, Cross-Channel CX &#x2014; Insider&gt;
+	at org.junit.jupiter.api.AssertionUtils.fail(AssertionUtils.java:55)
+	at org.junit.jupiter.api.AssertEquals.failNotEqual(AssertEquals.java:195)
+	at org.junit.jupiter.api.AssertEquals.assertEquals(AssertEquals.java:184)
+	at org.junit.jupiter.api.AssertEquals.assertEquals(AssertEquals.java:179)
+	at org.junit.jupiter.api.Assertions.assertEquals(Assertions.java:1124)
+	at com.insider.tests.InsiderTest.get_mainPage_title(InsiderTest.java:45)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:566)
+	at org.junit.platform.commons.util.ReflectionUtils.invokeMethod(ReflectionUtils.java:628)
+	at org.junit.jupiter.engine.execution.ExecutableInvoker.invoke(ExecutableInvoker.java:117)
+	at org.junit.jupiter.engine.descriptor.TestMethodTestDescriptor.lambda$invokeTestMethod$7(TestMethodTestDescriptor.java:184)
+	at org.junit.platform.engine.support.hierarchical.ThrowableCollector.execute(ThrowableCollector.java:73)
+	at org.junit.jupiter.engine.descriptor.TestMethodTestDescriptor.invokeTestMethod(TestMethodTestDescriptor.java:180)
+	at org.junit.jupiter.engine.descriptor.TestMethodTestDescriptor.execute(TestMethodTestDescriptor.java:127)
+	at org.junit.jupiter.engine.descriptor.TestMethodTestDescriptor.execute(TestMethodTestDescriptor.java:68)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$5(NodeTestTask.java:135)
+	at org.junit.platform.engine.support.hierarchical.ThrowableCollector.execute(ThrowableCollector.java:73)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$7(NodeTestTask.java:125)
+	at org.junit.platform.engine.support.hierarchical.Node.around(Node.java:135)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$8(NodeTestTask.java:123)
+	at org.junit.platform.engine.support.hierarchical.ThrowableCollector.execute(ThrowableCollector.java:73)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.executeRecursively(NodeTestTask.java:122)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.execute(NodeTestTask.java:80)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1541)
+	at org.junit.platform.engine.support.hierarchical.SameThreadHierarchicalTestExecutorService.invokeAll(SameThreadHierarchicalTestExecutorService.java:38)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$5(NodeTestTask.java:139)
+	at org.junit.platform.engine.support.hierarchical.ThrowableCollector.execute(ThrowableCollector.java:73)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$7(NodeTestTask.java:125)
+	at org.junit.platform.engine.support.hierarchical.Node.around(Node.java:135)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$8(NodeTestTask.java:123)
+	at org.junit.platform.engine.support.hierarchical.ThrowableCollector.execute(ThrowableCollector.java:73)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.executeRecursively(NodeTestTask.java:122)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.execute(NodeTestTask.java:80)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1541)
+	at org.junit.platform.engine.support.hierarchical.SameThreadHierarchicalTestExecutorService.invokeAll(SameThreadHierarchicalTestExecutorService.java:38)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$5(NodeTestTask.java:139)
+	at org.junit.platform.engine.support.hierarchical.ThrowableCollector.execute(ThrowableCollector.java:73)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$7(NodeTestTask.java:125)
+	at org.junit.platform.engine.support.hierarchical.Node.around(Node.java:135)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$8(NodeTestTask.java:123)
+	at org.junit.platform.engine.support.hierarchical.ThrowableCollector.execute(ThrowableCollector.java:73)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.executeRecursively(NodeTestTask.java:122)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.execute(NodeTestTask.java:80)
+	at org.junit.platform.engine.support.hierarchical.SameThreadHierarchicalTestExecutorService.submit(SameThreadHierarchicalTestExecutorService.java:32)
+	at org.junit.platform.engine.support.hierarchical.HierarchicalTestExecutor.execute(HierarchicalTestExecutor.java:57)
+	at org.junit.platform.engine.support.hierarchical.HierarchicalTestEngine.execute(HierarchicalTestEngine.java:51)
+	at org.junit.platform.launcher.core.DefaultLauncher.execute(DefaultLauncher.java:229)
+	at org.junit.platform.launcher.core.DefaultLauncher.lambda$execute$6(DefaultLauncher.java:197)
+	at org.junit.platform.launcher.core.DefaultLauncher.withInterceptedStreams(DefaultLauncher.java:211)
+	at org.junit.platform.launcher.core.DefaultLauncher.execute(DefaultLauncher.java:191)
+	at org.junit.platform.launcher.core.DefaultLauncher.execute(DefaultLauncher.java:128)
+	at org.apache.maven.surefire.junitplatform.LazyLauncher.execute(LazyLauncher.java:50)
+	at org.apache.maven.surefire.junitplatform.JUnitPlatformProvider.execute(JUnitPlatformProvider.java:184)
+	at org.apache.maven.surefire.junitplatform.JUnitPlatformProvider.invokeAllTests(JUnitPlatformProvider.java:148)
+	at org.apache.maven.surefire.junitplatform.JUnitPlatformProvider.invoke(JUnitPlatformProvider.java:122)
+	at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:385)
+	at org.apache.maven.surefire.booter.ForkedBooter.execute(ForkedBooter.java:162)
+	at org.apache.maven.surefire.booter.ForkedBooter.run(ForkedBooter.java:507)
+	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:495)
+</pre></div></td>
+<td>-</td></tr>
 <tr class="b">
 <td align="left"><img src="images/icon_success_sml.gif" alt="" /></td>
 <td><a id="TC_com.insider.tests.InsiderTest.select_careers"></a>select_careers</td>
-<td>2.764 s</td></tr>
+<td>2.128 s</td></tr>
 <tr class="a">
 <td align="left"><img src="images/icon_success_sml.gif" alt="" /></td>
 <td><a id="TC_com.insider.tests.InsiderTest.see_all_qa_jobs"></a>see_all_qa_jobs</td>
-<td>8.728 s</td></tr>
+<td>8.457 s</td></tr>
 <tr class="b">
 <td align="left"><img src="images/icon_success_sml.gif" alt="" /></td>
 <td><a id="TC_com.insider.tests.InsiderTest.check_all_jobs"></a>check_all_jobs</td>
@@ -149,7 +222,20 @@ function toggleDisplay(elementId) {
 <tr class="a">
 <td align="left"><img src="images/icon_success_sml.gif" alt="" /></td>
 <td><a id="TC_com.insider.tests.InsiderTest.click_applyNow_Button"></a>click_applyNow_Button</td>
-<td>5.099 s</td></tr></table></section><br /></section>
+<td>5.091 s</td></tr></table></section><br /></section><section><a id="Failure_Details"></a>
+<h2><a name="Failure_Details"></a>Failure Details</h2>
+<p>[<a href="#Summary">Summary</a>] [<a href="#Package_List">Package List</a>] [<a href="#Test_Cases">Test Cases</a>]</p><br />
+<table border="0" class="bodyTable">
+<tr class="a">
+<td align="left"><img src="images/icon_error_sml.gif" alt="" /></td>
+<td><a id="com.insider.tests.InsiderTest.get_mainPage_title"></a>get_mainPage_title</td></tr>
+<tr class="b">
+<td align="left">-</td>
+<td>org.opentest4j.AssertionFailedError: expected: &lt;#1 Leader in Individualized, Cross-Channel CX &#x2014; Insider&gt; but was: &lt;# Leader in Individualized, Cross-Channel CX &#x2014; Insider&gt;</td></tr>
+<tr class="a">
+<td align="left">-</td>
+<td>
+<div id="get_mainPage_title-failure">com.insider.tests.InsiderTest:45</div></td></tr></table><br /></section>
       </div>
     </div>
     <div class="clear">
