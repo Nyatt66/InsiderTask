@@ -1,13 +1,13 @@
 Installation
 Clone this repository to your local machine using the following command:
 
-Copy code:
+Use this command:
 " git clone https://github.com/Nyatt66/InsiderTask.git "
 
 
 Build the project and resolve dependencies using Maven:
 
-Copy code:
+Use this command:
 " mvn clean install "
 
 ---------------------------------------------------
@@ -19,8 +19,8 @@ Modify the test scripts or create new ones according to your requirements.
 
 Run the tests using the following command:
 
-Copy code:
-" mvn test "
+Use this command:
+" mvn site "
 
 The tests will be executed, and the results will be displayed in the console.
 
