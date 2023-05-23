@@ -22,9 +22,10 @@ public class ScreenShotOnFailure implements TestWatcher {
 
 
     public void captureScreenshot(String fileName) {
+        int i = 0;
         try {
             new File(path).mkdirs();
-            try ( FileOutputStream out = new FileOutputStream(path + File.separator + "screenshot-" + fileName + ".png")) {
+            try ( FileOutputStream out = new FileOutputStream(path + File.separator + "screenshot-" + fileName+ "("+ i++ + ")" + ".png")) {
                 out.write(((TakesScreenshot) Driver.getDriver()).getScreenshotAs(OutputType.BYTES));
             }
         } catch (IOException | WebDriverException e) {
